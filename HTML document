@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Structured Webpage</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Welcome to My Webpage</h1>
+    </header>
+
+    <!-- Ordered List with Roman Numerals -->
+    <section id="ordered-list">
+        <h2>My Top 3 Goals for This Year</h2>
+        <ol type="I">
+            <li>Learn Full-Stack Web Development</li>
+            <li>Build and Deploy 5 Projects</li>
+            <li>Start a Freelance Career</li>
+        </ol>
+    </section>
+
+    <!-- External Image from Pexels -->
+    <section id="image">
+        <h2>Beautiful Nature</h2>
+        <img src="https://images.pexels.com/photos/414171/pexels-photo-414171.jpeg" 
+             alt="Beautiful Landscape from Pexels" width="600">
+    </section>
+
+    <!-- Table of Contacts -->
+    <section id="contacts">
+        <h2>Contact List</h2>
+        <table border="1">
+            <tr>
+                <th>Name</th>
+                <th>Address</th>
+                <th>Mobile</th>
+                <th>Email</th>
+            </tr>
+            <tr>
+                <td>John Doe</td>
+                <td>New York, USA</td>
+                <td>+1 123 456 7890</td>
+                <td>john@example.com</td>
+            </tr>
+            <tr>
+                <td>Jane Smith</td>
+                <td>London, UK</td>
+                <td>+44 789 123 456</td>
+                <td>jane@example.com</td>
+            </tr>
+            <tr>
+                <td>David Kim</td>
+                <td>Seoul, South Korea</td>
+                <td>+82 10 9876 5432</td>
+                <td>david@example.com</td>
+            </tr>
+            <tr>
+                <td>Maria Gonzalez</td>
+                <td>Madrid, Spain</td>
+                <td>+34 612 345 678</td>
+                <td>maria@example.com</td>
+            </tr>
+            <tr>
+                <td>Alex Johnson</td>
+                <td>Sydney, Australia</td>
+                <td>+61 400 555 888</td>
+                <td>alex@example.com</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Registration Form -->
+    <section id="registration">
+        <h2>Register Here</h2>
+        <form>
+            <!-- Name -->
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+            <!-- Email -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <!-- Password -->
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Choose a password" required minlength="6">
+
+            <!-- Date of Birth -->
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <!-- Dropdown -->
+            <label for="country">Select Your Country:</label>
+            <select id="country" name="country" required>
+                <option value="">--Choose--</option>
+                <option value="USA">USA</option>
+                <option value="UK">UK</option>
+                <option value="India">India</option>
+                <option value="Australia">Australia</option>
+                <option value="Kenya">Kenya</option>
+            </select>
+
+            <!-- Radio Buttons (Gender) -->
+            <fieldset>
+                <legend>Gender:</legend>
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">Male</label>
+
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">Other</label>
+            </fieldset>
+
+            <!-- Checkboxes (Interests) -->
+            <fieldset>
+                <legend>Interests:</legend>
+                <input type="checkbox" id="coding" name="interest" value="coding">
+                <label for="coding">Coding</label>
+
+                <input type="checkbox" id="travel" name="interest" value="travel">
+                <label for="travel">Traveling</label>
+
+                <input type="checkbox" id="music" name="interest" value="music">
+                <label for="music">Music</label>
+            </fieldset>
+
+            <!-- Submit Button -->
+            <button type="submit">Register</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 My Webpage. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
